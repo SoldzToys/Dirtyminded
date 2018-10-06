@@ -7,7 +7,7 @@ const PornDriver = Pornsearch.search('amateur');
 
 client.on(`ready`, () => {
   console.log(`I'm about to get on!`);
-client.user.setActivity('Pornhub Games 2020');
+client.user.setActivity({ name: 'Pornhub Gifs', type: "WATCHING"});
 
  });   
 
