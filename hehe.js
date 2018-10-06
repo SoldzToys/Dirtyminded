@@ -22,7 +22,7 @@ PornDriver.driver('sex').gifs()
   })
   .then(videos => console.log(videos));
 
-}
+ });   
 
  if (message.content === `${prefix}google`) {
 
