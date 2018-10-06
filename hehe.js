@@ -16,7 +16,7 @@ client.on('message', async (message, args) => {
 
  if (message.content === `${prefix}google`) {
 
-let question = encode(args.join(' '));
+let question = encode(args.join(' '))
 
 let link = `http://www.lmgtfy.com/?q=${question}`
 let linkembed = new Discord.RichEmbed()
