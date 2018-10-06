@@ -11,7 +11,6 @@ client.user.setActivity("Pornhub Games 2020");
 
  });   
 
-
 PornDriver.driver('sex').gifs()
   .then((gifs) => {
     console.log(gifs);
@@ -20,5 +19,5 @@ PornDriver.driver('sex').gifs()
   })
   .then(videos => console.log(videos));
 
-}
+});
 client.login(process.env.BOT_TOKEN);
