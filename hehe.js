@@ -7,7 +7,7 @@ const PornDriver = Pornsearch.search('amateur');
 
 client.on(`ready`, () => {
   console.log(`I'm about to get on!`);
-   client.user.setActivity("Porn", {type: "WATCHING"});
+   client.user.setActivity("Porn", {type: "WATCHING"}, {status: 'idle'} );
 
  });   
 
