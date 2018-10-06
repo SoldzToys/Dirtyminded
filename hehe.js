@@ -22,7 +22,7 @@ let link = `http://www.lmgtfy.com/?q=${question}`
 let linkembed = new Discord.RichEmbed()
 .setTitle("Google's Answer")
 .setDescription(`**<${link}>**`)
-.setColor("#FF8C00")
+.setColor("#FF8C00");
 message.channel.send(linkembed);
    
  }
