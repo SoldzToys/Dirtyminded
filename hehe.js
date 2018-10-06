@@ -16,8 +16,7 @@ client.on('message', async (message, args, encode) => {
 
  if (message.content === `${prefix}google`) {
 
-let question = encode(args.join(' '))
-
+let question = encode(args.join(' '));
 let link = `http://www.lmgtfy.com/?q=${question}`
 let linkembed = new Discord.RichEmbed()
 .setTitle("Google's Answer")
@@ -27,4 +26,4 @@ message.channel.send(linkembed);
    
  }
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN)
