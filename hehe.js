@@ -4,7 +4,6 @@ const config = require('./botconfig.json');
 const { prefix, token } = require('./botconfig.json');
 const Pornsearch = require('pornsearch');
 const PornDriver = Pornsearch.search('amateur');
-const encode = require('strict-uri-encode');
 
 client.on(`ready`, () => {
   console.log(`I'm about to get on!`);
