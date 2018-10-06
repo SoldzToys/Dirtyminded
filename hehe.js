@@ -21,8 +21,7 @@ PornDriver.driver('sex').gifs()
     return PornDriver.videos();
   })
   .then(videos => console.log(videos));
-
- });   
+  
 
  if (message.content === `${prefix}google`) {
 
@@ -35,6 +34,6 @@ let linkembed = new Discord.RichEmbed()
 .setColor("#FF8C00")
 message.channel.send(linkembed);
    
-});
+ }
 
 client.login(process.env.BOT_TOKEN);
