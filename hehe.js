@@ -21,5 +21,5 @@ PornDriver.driver('sex').gifs()
   })
   .then(videos => console.log(videos));
 
-});  
+}
 client.login(process.env.BOT_TOKEN);
