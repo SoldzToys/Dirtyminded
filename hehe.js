@@ -12,7 +12,7 @@ client.user.setActivity("Pornhub Games 2020");
 
  });   
 
-client.on('message', async (message, args) => {
+client.on('message', async (message, args, encode) => {
 
  if (message.content === `${prefix}google`) {
 
