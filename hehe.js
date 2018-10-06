@@ -12,6 +12,8 @@ client.user.setActivity("Pornhub Games 2020");
 
  });   
 
+client.on('message', async (message, args) => {
+
 PornDriver.driver('sex').gifs()
   .then((gifs) => {
     console.log(gifs);
@@ -22,8 +24,6 @@ PornDriver.driver('sex').gifs()
 
 }
 
-client.on('message', async (message, args) => {
- 
  if (message.content === `${prefix}google`) {
 
 let question = encode(args.join(' '));
