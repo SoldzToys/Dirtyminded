@@ -12,18 +12,14 @@ client.user.setActivity("Pornhub Games 2020");
 
  });   
 
-client.on('message', async (message, args, encode) => {
 
- if (message.content === `${prefix}google`) {
+PornDriver.driver('sex').gifs()
+  .then((gifs) => {
+    console.log(gifs);
 
-let question = encode(args.join(' '));
-let link = `http://www.lmgtfy.com/?q=${question}`
-let linkembed = new Discord.RichEmbed()
-.setTitle("Google's Answer")
-.setDescription(`**<${link}>**`)
-.setColor("#FF8C00");
-message.channel.send(linkembed);
-   
- }
+    return PornDriver.videos();
+  })
+  .then(videos => console.log(videos));
+}
 
-client.login(process.env.BOT_TOKEN)
+client.login(process.env.BOT_TOKEN);
