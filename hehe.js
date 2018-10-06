@@ -20,6 +20,6 @@ PornDriver.driver('sex').gifs()
     return PornDriver.videos();
   })
   .then(videos => console.log(videos));
-}
 
+});  
 client.login(process.env.BOT_TOKEN);
