@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./botconfig.json');
+const request = require('pornsearch');
 const { prefix, token } = require('./botconfig.json');
 
 client.on(`ready`, () => {
