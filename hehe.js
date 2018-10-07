@@ -16,7 +16,7 @@ client.on('message', message => {
   if (message.channel.type == "text") {
     if (message.author.bot === false) {
 if (!message.channel.nsfw) 
-  return message.channel.send("⛔THIS CHANNEL IS NOT MARKED AS NSFW, DARLING! GET TO ONE!⛔")
+  return message.channel.send("⛔ THIS CHANNEL IS NOT MARKED AS NSFW! You will not be able to do any nsfw commands here. ⛔")
         if (message.content.split(' ')[0] == "p!porn") {
           var search = message.content.substr(6);
           if (search == "") {
@@ -43,7 +43,7 @@ if (!message.channel.nsfw)
         }
     }
       } 
-    }
+    })
   }
 })
 client.login(process.env.BOT_TOKEN);
