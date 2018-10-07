@@ -46,6 +46,5 @@ if (!message.channel.nsfw)
         message.channel.send("L'option 'NSFW' doit etre activé! \n Rendez vous dans les paramètres du salon actuel pour l'activer")
       }
     }
-  }
 })
 client.login(process.env.BOT_TOKEN);
