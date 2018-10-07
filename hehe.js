@@ -12,14 +12,13 @@ client.on(`ready`, () => {
   
 });
 
-client.login(process.env.BOT_TOKEN);
 
 client.on('message', message => {
   if (message.channel.type == "text") {
     if (message.author.bot === false) {
 if (!message.channel.nsfw) 
   return message.channel.send("⛔ THIS CHANNEL IS NOT MARKED AS NSFW! You will not be able to do any nsfw commands here. ⛔")
-        if (message.content.split(' ')[0] == "p!porn") {
+        if (message.content.split(' ')[0] == "!porn") {
           var search = message.content.substr(6);
           if (search == "") {
             message.channel.send("Usage: p!porn <porntype>")
@@ -43,7 +42,10 @@ if (!message.channel.nsfw)
           });
 
         }
+      } else {
+        message.channel.send("L'option 'NSFW' doit etre activé! \n Rendez vous dans les paramètres du salon actuel pour l'activer")
+      }
     }
-      } 
-    })
   }
+})
+client.login(process.env.BOT_TOKEN);
