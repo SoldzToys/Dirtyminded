@@ -16,12 +16,12 @@ client.on(`ready`, () => {
 client.on('message', message => {
   if (message.channel.type == "text") {
     if (message.author.bot === false) {
-      if (message.content.split(' ')[0] == "p!porn-video") {
+      if (message.content.split(' ')[0] == "p!porn") {
 if (!message.channel.nsfw) 
   return message.channel.send("⛔ THIS CHANNEL IS NOT MARKED AS NSFW! You will not be able to do any nsfw commands here. ⛔")
           var search = message.content.substr(6);
           if (search == "") {
-            message.channel.send("Usage: p!porn-video <porntype>")
+            message.channel.send("Usage: p!porn <porntype>")
             return;
           }
           const Searcher = new Pornsearch(search);
