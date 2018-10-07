@@ -16,12 +16,12 @@ client.on(`ready`, () => {
 client.on('message', message => {
   if (message.channel.type == "text") {
     if (message.author.bot === false) {
-      if (message.content.split(' ')[0] == "p!porn") {
+      if (message.content.split(' ')[0] == "p!porn-video") {
 if (!message.channel.nsfw) 
   return message.channel.send("⛔ THIS CHANNEL IS NOT MARKED AS NSFW! You will not be able to do any nsfw commands here. ⛔")
           var search = message.content.substr(6);
           if (search == "") {
-            message.channel.send("Usage: p!porn <porntype>")
+            message.channel.send("Usage: p!porn-video <porntype>")
             return;
           }
           const Searcher = new Pornsearch(search);
@@ -30,7 +30,7 @@ if (!message.channel.nsfw)
             var result_count = result.length;
             var rand = Math.floor(Math.random() * result_count);
             var result_solo = videos[rand];
-            return message.channel.send('Here is an image X responding to the search "' + search + '"', {
+            return message.channel.send('Here is the result of your search: "'+ search + '"', {
               embed: {
                 image: {
                   url: result_solo['thumb']
