@@ -40,7 +40,8 @@ if (!message.channel.nsfw) return message.channel.send("⛔THIS CHANNEL IS NOT M
           });
 
         }
-        
+    }
+    
       }
     }
   }
