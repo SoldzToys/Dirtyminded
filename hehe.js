@@ -15,7 +15,7 @@ client.on(`ready`, () => {
 client.on('message', message => {
   if (message.channel.type == "text") {
     if (message.author.bot === false) {
-      if (message.channel.nsfw == true) {
+if (!message.channel.nsfw) return message.channel.send("⛔THIS CHANNEL IS NOT MARKED AS NSFW, DARLING! GET TO ONE!⛔")
         if (message.content.split(' ')[0] == "p!porn") {
           var search = message.content.substr(6);
           if (search == "") {
@@ -40,8 +40,7 @@ client.on('message', message => {
           });
 
         }
-      } else {
-        if (!message.channel.nsfw) return message.channel.send("⛔THIS CHANNEL IS NOT MARKED AS NSFW, DARLING! GET TO ONE!⛔")
+        
       }
     }
   }
