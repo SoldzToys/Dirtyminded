@@ -7,7 +7,7 @@ const Searcher = new Pornsearch('tits');
 
 client.on(`ready`, () => {
   console.log(`I'm about to get on!`);
-   client.user.setActivity("Porn", {type: "WATCHING"});
+   client.user.setActivity("p!porn", {type: "WATCHING"});
   client.user.setStatus("idle")
   
 });
@@ -30,7 +30,7 @@ if (!message.channel.nsfw)
             var result_count = result.length;
             var rand = Math.floor(Math.random() * result_count);
             var result_solo = videos[rand];
-            return message.channel.send('Here is the result of your search: "'+ search + '"', {
+            return message.channel.send('Here is the result of your search:"'+ search +'"', {
               embed: {
                 image: {
                   url: result_solo['thumb']
