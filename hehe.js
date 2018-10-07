@@ -16,10 +16,10 @@ client.on('message', message => {
   if (message.channel.type == "text") {
     if (message.author.bot === false) {
       if (message.channel.nsfw == true) {
-        if (message.content.split(' ')[0] == "-porn") {
+        if (message.content.split(' ')[0] == "p!porn") {
           var search = message.content.substr(6);
           if (search == "") {
-            message.channel.send("Usage: -porn [RECHERCHE]")
+            message.channel.send("Usage: p!porn [RECHERCHE]")
           }
           const Searcher = new Pornsearch(search);
           Searcher.videos().then(function(videos) {
