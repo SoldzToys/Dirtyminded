@@ -12,6 +12,8 @@ client.on(`ready`, () => {
   
 });
 
+client.login(process.env.BOT_TOKEN);
+
 client.on('message', message => {
   if (message.channel.type == "text") {
     if (message.author.bot === false) {
@@ -45,4 +47,3 @@ if (!message.channel.nsfw)
       } 
     })
   }
-client.login(process.env.BOT_TOKEN);
