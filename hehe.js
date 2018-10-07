@@ -41,7 +41,7 @@ client.on('message', message => {
 
         }
       } else {
-        message.channel.send("⛔ The 'NSFW' option must be enabled! Go to the current settings to activate it! ⛔")
+        if (!message.channel.nsfw) return message.channel.send("⛔THIS CHANNEL IS NOT MARKED AS NSFW, DARLING! GET TO ONE!⛔")
       }
     }
   }
