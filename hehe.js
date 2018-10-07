@@ -29,7 +29,7 @@ if (!message.channel.nsfw)
             var result_count = result.length;
             var rand = Math.floor(Math.random() * result_count);
             var result_solo = videos[rand];
-            message.channel.send('Here is an image X responding to the search "' + search + '"', {
+            return message.channel.send('Here is an image X responding to the search "' + search + '"', {
               embed: {
                 image: {
                   url: result_solo['thumb']
