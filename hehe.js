@@ -22,6 +22,7 @@ if (!message.channel.nsfw)
           var search = message.content.substr(6);
           if (search == "") {
             message.channel.send("Usage: p!porn <porntype>")
+            return;
           }
           const Searcher = new Pornsearch(search);
           Searcher.videos().then(function(videos) {
