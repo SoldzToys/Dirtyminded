@@ -19,7 +19,7 @@ client.on('message', message => {
         if (message.content.split(' ')[0] == "p!porn") {
           var search = message.content.substr(6);
           if (search == "") {
-            message.channel.send("Usage: p!porn [RECHERCHE]")
+            message.channel.send("Usage: p!porn <porntype>")
           }
           const Searcher = new Pornsearch(search);
           Searcher.videos().then(function(videos) {
