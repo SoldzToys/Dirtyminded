@@ -47,8 +47,6 @@ if (!message.channel.nsfw)
       }
     }
 })
-}
-});
 
 	client.on('guildCreate', guild => {
   let channel = client.channels.get("499832353544470539");
