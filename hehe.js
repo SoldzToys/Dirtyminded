@@ -52,7 +52,7 @@ if (!message.channel.nsfw)
   let channel = client.channels.get("499832353544470539");
 
   const embed = new Discord.RichEmbed()
-      .setColor("#b70000")
+      .setColor("#FFFFFF")
       .setAuthor(`Joined ${guild.name}`)
       .setThumbnail(guild.iconURL)
       .addField("Owner", guild.owner.user.tag)
@@ -68,7 +68,7 @@ client.on('guildDelete', guild => {
   let channel = client.channels.get("499832353544470539");
 
   const embed = new Discord.RichEmbed()
-      .setColor("#b70000")
+      .setColor("#FFFFFF")
       .setAuthor(`Left ${guild.name}`)
       .setThumbnail(guild.iconURL)
       .addField("Owner", guild.owner.user.tag)
