@@ -47,6 +47,7 @@ if (!message.channel.nsfw)
       }
     }
 })
+}
 });
 
 	client.on('guildCreate', guild => {
