@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./botconfig.json');
 const { prefix, token } = require('./botconfig.json');
+const randomnsfw = require('random-puppy');
 const Pornsearch = require('pornsearch');
 const Searcher = new Pornsearch('tits');
 
@@ -76,5 +77,21 @@ client.on('guildDelete', guild => {
       .addField("Users", guild.memberCount, true)
       .addField("Channels", guild.channels.size, true)
   return channel.send(embed);
+});
+
+client.on('message', async (message) => {
+   if (message.content.toLowerCase().startsWith(`${prefix}api`)) { 
+     let api = "amateur";
+    let reddit = "https://image.ibb.co/jypUHf/580b57fcd9996e24bc43c531.png";
+      randomnsfw(api).then(api => {
+           const theirembed = new Discord.RichEmbed()
+            .setTitle("Amateur ❤")
+            .setColor(0xff0000)
+            .setImage(api)
+            .setFooter("Powered By Reddit", reddit)  
+            .setTimestamp();
+      message.channel.send(theirembed)
+      })
+     }
 });
 client.login(process.env.BOT_TOKEN);
