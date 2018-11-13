@@ -81,6 +81,7 @@ client.on('guildDelete', guild => {
 
 client.on('message', async (message) => {
    if (message.content.toLowerCase().startsWith(`${prefix}api`)) { 
+	   if (!message.channel.nsfw) return message.channel.send("⛔ THIS CHANNEL IS NOT MARKED AS NSFW! You will not be able to do any nsfw commands here. ⛔")
      let api = "amateur";
     let reddit = "https://image.ibb.co/jypUHf/580b57fcd9996e24bc43c531.png";
       randomnsfw(api).then(api => {
