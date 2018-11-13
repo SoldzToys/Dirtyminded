@@ -85,7 +85,7 @@ client.on('message', async (message) => {
 	         let nsfwreddits = [
         'CollegeSluts',
         'amateur',
-        'CollegeAmaterus',
+        'CollegeAmateurs',
              'GoneWild',
              'LegsUp',
              'PussySlip'
