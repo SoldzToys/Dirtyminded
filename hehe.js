@@ -8,7 +8,7 @@ const Searcher = new Pornsearch('tits');
 
 client.on(`ready`, () => {
   console.log(`I'm about to get on!`);
-   client.user.setActivity("p!porn", {type: "WATCHING"});
+   client.user.setActivity("Porn | (p!porn, p!nsfw)", {type: "WATCHING"});
   client.user.setStatus("idle")
   
 });
@@ -80,9 +80,17 @@ client.on('guildDelete', guild => {
 });
 
 client.on('message', async (message) => {
-   if (message.content.toLowerCase().startsWith(`${prefix}api`)) { 
+   if (message.content.toLowerCase().startsWith(`${prefix}nsfw`)) { 
 	   if (!message.channel.nsfw) return message.channel.send("⛔ THIS CHANNEL IS NOT MARKED AS NSFW! You will not be able to do any nsfw commands here. ⛔")
-     let api = "amateur";
+	         let nsfwreddits = [
+        'CollegeSluts',
+        'amateur',
+        'CollegeAmaterus',
+             'GoneWild',
+             'LegsUp',
+             'PussySlip'
+    ]
+    let api = nsfwreddits[Math.round(Math.random() * (nsfwreddits.length - 1))];
     let reddit = "https://image.ibb.co/jypUHf/580b57fcd9996e24bc43c531.png";
       randomnsfw(api).then(api => {
            const theirembed = new Discord.RichEmbed()
