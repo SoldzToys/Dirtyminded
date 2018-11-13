@@ -94,7 +94,7 @@ client.on('message', async (message) => {
     let reddit = "https://image.ibb.co/jypUHf/580b57fcd9996e24bc43c531.png";
       randomnsfw(api).then(api => {
            const theirembed = new Discord.RichEmbed()
-            .setTitle("Amateur ❤")
+            .setTitle("NSFW ❤")
             .setColor(0xff0000)
             .setImage(api)
             .setFooter("Powered By Reddit", reddit)  
