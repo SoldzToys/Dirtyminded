@@ -102,5 +102,20 @@ client.on('message', async (message) => {
       message.channel.send(theirembed)
       })
      }
+	   if (message.content.toLowerCase().startsWith(`${prefix}vore`)) { 
+	   if (!message.channel.nsfw) return message.channel.send("⛔ THIS CHANNEL IS NOT MARKED AS NSFW! You will not be able to do any nsfw commands here. ⛔");
+    let kitty = "https://image.ibb.co/mMH5S0/vorewolf.png";  
+    let api = "Vore"
+    let reddit = "https://image.ibb.co/jypUHf/580b57fcd9996e24bc43c531.png";
+      randomnsfw(api).then(api => {
+           const theirembed = new Discord.RichEmbed()
+	    .setAuthor("VORE", kitty)
+            .setColor(0xff0000)
+            .setImage(api)
+            .setFooter("Powered By Reddit", reddit)  
+            .setTimestamp();
+      message.channel.send(theirembed)
+      })
+     }
 });
 client.login(process.env.BOT_TOKEN);
