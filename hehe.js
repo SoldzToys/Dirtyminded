@@ -88,7 +88,8 @@ client.on('message', async (message) => {
         'CollegeAmateurs',
              'GoneWild',
              'LegsUp',
-             'PussySlip'
+             'PussySlip',
+	     'bigtiddygothgf'
     ]
     let api = nsfwreddits[Math.round(Math.random() * (nsfwreddits.length - 1))];
     let reddit = "https://image.ibb.co/jypUHf/580b57fcd9996e24bc43c531.png";
