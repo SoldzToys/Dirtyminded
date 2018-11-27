@@ -84,12 +84,17 @@ client.on('message', async (message) => {
 	   if (!message.channel.nsfw) return message.channel.send("⛔ THIS CHANNEL IS NOT MARKED AS NSFW! You will not be able to do any nsfw commands here. ⛔")
 	         let nsfwreddits = [
         'CollegeSluts',
-        'amateur',
-        'CollegeAmateurs',
+        '18_19',
+        'nsfw_gifs',
              'GoneWild',
              'LegsUp',
              'PussySlip',
-	     'bigtiddygothgf'
+	     'bigtiddygothgf',
+	    'NSFW_GIF',
+	   'porn_gifs',
+	  'porn',
+	'porninfifteenseconds',
+       'nsfw'
     ]
     let api = nsfwreddits[Math.round(Math.random() * (nsfwreddits.length - 1))];
     let reddit = "https://image.ibb.co/jypUHf/580b57fcd9996e24bc43c531.png";
@@ -111,24 +116,6 @@ client.on('message', async (message) => {
       randomnsfw(api).then(api => {
            const theirembed = new Discord.RichEmbed()
 	    .setAuthor("VORE", kitty)
-            .setColor(0xff0000)
-            .setImage(api)
-            .setFooter("Powered By Reddit", reddit)  
-            .setTimestamp();
-      message.channel.send(theirembed)
-      })
-     }
-	
-	  if (message.content.toLowerCase().startsWith(`${prefix}gif`)) { 
-	   if (!message.channel.nsfw) return message.channel.send("⛔ THIS CHANNEL IS NOT MARKED AS NSFW! You will not be able to do any nsfw commands here. ⛔")
-	         let nsfwreddits = [
-        'NSFW_GIF'
-    ]
-    let api = nsfwreddits[Math.round(Math.random() * (nsfwreddits.length - 1))];
-    let reddit = "https://image.ibb.co/jypUHf/580b57fcd9996e24bc43c531.png";
-      randomnsfw(api).then(api => {
-           const theirembed = new Discord.RichEmbed()
-            .setTitle("NSFW ❤")
             .setColor(0xff0000)
             .setImage(api)
             .setFooter("Powered By Reddit", reddit)  
