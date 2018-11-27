@@ -118,5 +118,23 @@ client.on('message', async (message) => {
       message.channel.send(theirembed)
       })
      }
+	
+	  if (message.content.toLowerCase().startsWith(`${prefix}gif`)) { 
+	   if (!message.channel.nsfw) return message.channel.send("⛔ THIS CHANNEL IS NOT MARKED AS NSFW! You will not be able to do any nsfw commands here. ⛔")
+	         let nsfwreddits = [
+        'NSFW_GIF'
+    ]
+    let api = nsfwreddits[Math.round(Math.random() * (nsfwreddits.length - 1))];
+    let reddit = "https://image.ibb.co/jypUHf/580b57fcd9996e24bc43c531.png";
+      randomnsfw(api).then(api => {
+           const theirembed = new Discord.RichEmbed()
+            .setTitle("NSFW ❤")
+            .setColor(0xff0000)
+            .setImage(api)
+            .setFooter("Powered By Reddit", reddit)  
+            .setTimestamp();
+      message.channel.send(theirembed)
+      })
+     }
 });
 client.login(process.env.BOT_TOKEN);
