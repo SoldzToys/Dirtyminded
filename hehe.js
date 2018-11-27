@@ -83,7 +83,7 @@ client.on('message', async (message) => {
    if (message.content.toLowerCase().startsWith(`${prefix}nsfw`)) { 
 	   if (!message.channel.nsfw) return message.channel.send("⛔ THIS CHANNEL IS NOT MARKED AS NSFW! You will not be able to do any nsfw commands here. ⛔")
 	         let nsfwreddits = [
-        'CollegeSluts',
+        'suicidegirls',
         '18_19',
         'nsfw_gifs',
              'GoneWild',
