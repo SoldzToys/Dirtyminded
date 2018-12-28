@@ -38,12 +38,12 @@ if (!message.channel.nsfw)
                 },
                 url: result_solo['url'],
                 title: result_solo['title'],
-                description: "From:" + ' ' + result_solo['href'] + ' | ' +  "Duration:" + ' ' + result_solo['duration'],
+                description: "Duration:" + ' ' + result_solo['duration'] //"From:" + ' ' + result_solo['href'] + ' | ' +  "Duration:" + ' ' + result_solo['duration'],
 		
               }
 
             });
-		  console.log(result_solo)
+		//  console.log(result_solo)
           });
         }
       } else {
