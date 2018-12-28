@@ -38,16 +38,17 @@ if (!message.channel.nsfw)
                 },
                 url: result_solo['url'],
                 title: result_solo['title'],
-                description: "Made By:" + ' ' + result_solo['href'] + ' | ' +  "Duration:" + ' ' + result_solo['duration'],
+                description: "From:" + ' ' + result_solo['href'] + ' | ' +  "Duration:" + ' ' + result_solo['duration'],
 		
               }
             });
           });
-
+     	console.log(result_solo)
         }
       } else {
       }
     }
+
 })
 
 	client.on('guildCreate', guild => {
