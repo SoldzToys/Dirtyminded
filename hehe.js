@@ -37,8 +37,9 @@ if (!message.channel.nsfw)
                   url: result_solo['thumb']
                 },
                 url: result_solo['url'],
-                title: result_solo['title'],
-                description: "Duration:" + ' ' + result_solo['duration'],
+                title: result_solo['title'] + ' ' + "Made By:" + ' ' + result_solo['user'],
+                description: "Duration:" + ' ' + result_solo['duration']
+		
               }
             });
           });
