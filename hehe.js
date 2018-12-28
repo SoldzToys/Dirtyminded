@@ -33,9 +33,6 @@ if (!message.channel.nsfw)
             var result_solo = videos[rand];
             return message.channel.send('Here is the result of your search: **'+ search +'** ', {
               embed: {
-		      color: {
-		      color: "#000000"
-	      },
                 image: {
                   url: result_solo['thumb']
                 },
