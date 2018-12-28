@@ -37,7 +37,7 @@ if (!message.channel.nsfw)
                   url: result_solo['thumb']
                 },
                 url: result_solo['url'],
-                title: result_solo['title'] + ' ' + "Made By:" + ' ' + result_solo['user'],
+                title: result_solo['title'] + ' ' + "Made By:" + ' ' + result_solo['clear'],
                 description: "Duration:" + ' ' + result_solo['duration']
 		
               }
