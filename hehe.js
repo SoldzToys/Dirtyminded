@@ -33,12 +33,15 @@ if (!message.channel.nsfw)
             var result_solo = videos[rand];
             return message.channel.send('Here is the result of your search: **'+ search +'** ', {
               embed: {
+		      color: {
+		      color: "#000000"
+	      },
                 image: {
                   url: result_solo['thumb']
                 },
                 url: result_solo['url'],
                 title: result_solo['title'],
-                description: "Made By:" + ' ' + result_solo['data-userid'] + ' | ' +  "Duration:" + ' ' + result_solo['duration'],
+                description: "Made By:" + ' ' + result_solo['href'] + ' | ' +  "Duration:" + ' ' + result_solo['duration'],
 		
               }
             });
