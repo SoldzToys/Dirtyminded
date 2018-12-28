@@ -38,7 +38,7 @@ if (!message.channel.nsfw)
                 },
                 url: result_solo['url'],
                 title: result_solo['title'],
-                description: "Made By:" + ' ' + result_solo['usernameWrap clearfix'] + ' ' +  "Duration:" + ' ' + result_solo['duration']
+                description: "Made By:" + ' ' + result_solo['video-info-row'] + ' | ' +  "Duration:" + ' ' + result_solo['duration']
 		
               }
             });
