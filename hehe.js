@@ -30,7 +30,7 @@ if (!message.channel.nsfw)
             var result = videos;
             var result_count = result.length;
             var rand = Math.floor(Math.random() * result_count);
-            var result_solo = videos[rand];
+            const result_solo = videos[rand];
             return message.channel.send('Here is the result of your search: **'+ search +'** ', {
               embed: {
                 image: {
@@ -41,9 +41,10 @@ if (!message.channel.nsfw)
                 description: "From:" + ' ' + result_solo['href'] + ' | ' +  "Duration:" + ' ' + result_solo['duration'],
 		
               }
+
             });
+		  console.log(result_solo)
           });
-     	console.log(result_solo)
         }
       } else {
       }
@@ -107,7 +108,7 @@ client.on('message', async (message) => {
             .setImage(api)
             .setFooter("Powered By Reddit", reddit)  
             .setTimestamp();
-      message.channel.send(theirembed)
+      message.channel.send(theirembed);
       })
      }
 	   if (message.content.toLowerCase().startsWith(`${prefix}vore`)) { 
