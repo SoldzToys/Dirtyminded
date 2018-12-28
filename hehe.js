@@ -38,7 +38,7 @@ if (!message.channel.nsfw)
                 },
                 url: result_solo['url'],
                 title: result_solo['title'],
-                description: "Duration:" + result_solo['duration'],
+                description: "Duration:" + ' ' + result_solo['duration'],
               }
             });
           });
