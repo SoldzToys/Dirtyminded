@@ -38,7 +38,8 @@ if (!message.channel.nsfw)
                 },
                 url: result_solo['url'],
                 title: result_solo['title'],
-                description: "Made By:" + ' ' + result_solo['video-info-row'] + ' | ' +  "Duration:" + ' ' + result_solo['duration']
+                description: "Made By:" + ' ' + result_solo['data-userid'] + ' | ' +  "Duration:" + ' ' + result_solo['duration'],
+		color: "0xff0000"
 		
               }
             });
