@@ -7,7 +7,7 @@ const Pornsearch = require('pornsearch');
 const Searcher = new Pornsearch('tits');
 
 client.on(`ready`, () => {
-  console.log(`I'm about to get on!`);
+  console.log(`I'm about to get on!!`);
    client.user.setActivity("Porn | (p!porn, p!nsfw)", {type: "WATCHING"});
   client.user.setStatus("idle")
   
